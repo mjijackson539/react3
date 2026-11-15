@@ -1,0 +1,100 @@
+h1 {
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+a {
+  color: inherit;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.productcard {
+  width: 242px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+.productcard img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.light button {
+  background-color: #eee;
+  color: #000;
+  border-color: #999;
+}
+.dark button {
+  background-color: #555;
+  color: #fff;
+  border-color: #aaa;
+}
+
+.catalog-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.categories {
+  min-width: 190px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+.categories label,
+.login-form label {
+  display: block;
+  margin: 12px 0;
+}
+.categories input {
+  margin-right: 8px;
+}
+.login-form {
+  max-width: 350px;
+  margin: 40px auto;
+}
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.error {
+  color: #d22;
+}
+.admin form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.admin input,
+.admin select {
+  padding: 8px;
+}
+.admin > div {
+  margin: 8px 0;
+}
+@media (max-width: 650px) {
+  .catalog-layout {
+    flex-direction: column;
+  }
+  .categories {
+    width: 100%;
+  }
+}
